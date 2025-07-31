@@ -1,33 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const pokemons = [{
+    id: 1,
+    nome: 'Bulbasaur',
+    tipo: 'Grama / Veneno'
+  }, {
+    id: 2,
+    nome: 'Ivysaur',
+    tipo: 'Grama / Veneno'
+  }, {
+    id: 3,
+    nome: 'Venusaur',
+    tipo: 'Grama / Veneno'
+  }, {
+    id: 4,
+    nome: 'Charmander',
+    tipo: 'Fogo'
+  }, {
+    id: 5,
+    nome: 'Charmeleon',
+    tipo: 'Fogo'
+  }, {
+    id: 6,
+    nome: 'Charizard',
+    tipo: 'Fogo / Voador'
+  }, {
+    id: 7,
+    nome: 'Squirtle',
+    tipo: 'Água'
+  }, {
+    id: 8,
+    nome: 'Wartortle',
+    tipo: 'Água'
+  }, {
+    id: 9,
+    nome: 'Blastoise',
+    tipo: 'Água'
+  }]
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {
+        pokemons.map(pokemon => <Card info={pokemon} />)
+      }
     </>
   )
 }
