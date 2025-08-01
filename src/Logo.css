@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo img {
+    width: 300px;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+}

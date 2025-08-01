@@ -1,5 +1,8 @@
 import './App.css'
+import Logo from './Logo'
 import Card from './Card'
+import Player from './Player'
+import Youtube from './Youtube'
 
 function App() {
 
@@ -43,9 +46,18 @@ function App() {
 
   return (
     <>
-      {
-        pokemons.map(pokemon => <Card info={pokemon} />)
-      }
+      <Logo />
+      <div className='lista'>
+        {
+          pokemons.map(pokemon => <Card info={pokemon} />)
+        }
+      </div>
+      <div className="player">
+        <Player />
+      </div>
+      <div className="youtube">
+        <Youtube />
+      </div>
     </>
   )
 }
