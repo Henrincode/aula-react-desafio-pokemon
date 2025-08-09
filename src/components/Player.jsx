@@ -1,6 +1,6 @@
 import React from 'react';
 import './Player.css'
-import BgTema from './assets/bg-tema.mp3'
+import BgTema from '../assets/bg-tema.mp3'
 
 function Player(props) {
 

@@ -1,8 +1,8 @@
 import './App.css'
-import Logo from './Logo'
-import Card from './Card'
-import Player from './Player'
-import Youtube from './Youtube'
+import Logo from './components/Logo'
+import Card from './components/Card'
+import Player from './components/Player'
+import Youtube from './components/Youtube'
 
 function App() {
 
